@@ -36,19 +36,19 @@ def menu():
   print(menu)
 
   order_list = {
-    'Wings': 0,
-    'Cookies': 0,
-    'Spring Rolls': 0,
-    'Salmon': 0,
-    'Steak': 0,
-    'Meat Tornado': 0,
-    'A Literal Garden': 0,
-    'Ice Cream': 0,
-    'Cake': 0,
-    'Pie': 0,
-    'Coffee': 0,
-    'Tea': 0,
-    'Unicorn Tears': 0
+    'WINGS': 0,
+    'COOKIES': 0,
+    'SPRING ROLLS': 0,
+    'SALMON': 0,
+    'STEAK': 0,
+    'MEAT TORNADO': 0,
+    'A LITERAL GARDEN': 0,
+    'ICE CREAM': 0,
+    'CAKE': 0,
+    'PIE': 0,
+    'COFFEE': 0,
+    'TEA': 0,
+    'UNICORN TEARS': 0
   }
 
   total_orders = 0
@@ -60,9 +60,9 @@ def menu():
       ** What would you like to order? **
       ***********************************
       > '''
-    ).capitalize()
+    ).upper()
 
-    if order == 'Quit':
+    if order == 'QUIT':
       return
 
     if order in order_list:
